@@ -11,10 +11,10 @@ public class Main {
     public static void main(String[] args) {
         ContactService service = new ContactServiceImpl();
         Scanner input = new Scanner(System.in);
-
+        service.loadFromFile();
         while (true) {
 
-            print("\n1.Add 2.Remove 3.List 4.Search Phone 5.Search Name 6.Sort 7.Save 9.Exit");
+            print("\n1.Add 2.Remove 3.List 4.Search Phone 5.Search Name 6.Sort 7.Save 0.Exit");
             int choice = input.nextInt();
             input.nextLine();
 
